@@ -45,9 +45,10 @@ app.get("/:path", function (req, res) {
 //If the router can't find a route, it falls through to the error handler. 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+    res.json({
+        "error": "xml2json service failed",
+        "code": "404"
+    });
 });
 
 // production error handler
