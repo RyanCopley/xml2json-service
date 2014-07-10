@@ -8,7 +8,6 @@
   "dependencies": {
     "express": "~3.4.8",
     "morgan": "~1.0.0",
-    "body-parser": "~1.0.0",
     "requestify" :"0.1.16",
     "xml2json" : "0.4.0"
   }

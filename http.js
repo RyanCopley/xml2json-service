@@ -2,13 +2,11 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var logger = require('morgan');
-var bodyParser = require('body-parser');
 var app = express();
 var xmlParser = require('xml2json');
 var requestify = require('requestify');
 
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded());
 app.use(app.router);
 
 //Routes
