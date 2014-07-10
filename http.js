@@ -1,8 +1,7 @@
 var express = require('express');
-var http = require('http');
-var path = require('path');
-var logger = require('morgan');
 var app = express();
+
+var logger = require('morgan');
 var xmlParser = require('xml2json');
 var requestify = require('requestify');
 
