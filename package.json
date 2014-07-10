@@ -1,17 +1,15 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "xml2json-service",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node http"
   },
   "dependencies": {
     "express": "~3.4.8",
-    "static-favicon": "~1.0.0",
     "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
-    "xml2js" :"*",
-    "requestify" :"*"
+    "requestify" :"0.1.16",
+    "xml2json" : "0.4.0"
   }
 }
