@@ -34,8 +34,6 @@ app.get("/:path", function (req, res) {
             var json = xmlParser.toJson(rx, options);
             res.json(json);
         }).fail(function (err) {
-            console.log("err");
-            console.log(err);
             res.json({
                 "error": err,
                 "code": "3",
